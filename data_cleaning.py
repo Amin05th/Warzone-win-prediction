@@ -20,7 +20,7 @@ df['kills_assists'] = df['kills'] + df['assists']
 df['deaths/match_ratio'] = df['deaths'] / df['games_played']
 
 # suicides per match
-df['suicides/match'] = df['suicides'] / df['games_played']
+df['suicides/match_ratio'] = df['suicides'] / df['games_played']
 
 # killed by an enemy
 df['killed_by_enemies'] = df['deaths'] - df['suicides']
