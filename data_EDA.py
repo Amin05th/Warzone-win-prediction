@@ -21,7 +21,7 @@ graph3.show()
 
 # bar plot of kills and assists
 sorted_dataframe_by_kills_assists = df.sort_values("kills_assists", ascending=False)
-graph4 = px.bar(sorted_dataframe_by_kills_assists, x="name", y=["kills", "assists", "deaths"], barmode="group")
+graph4 = px.bar(sorted_dataframe_by_kills_assists, x="name", y=["kills", "assists", "deaths"], barmode="group", hover_name="games_played")
 graph4.show()
 
 
