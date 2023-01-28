@@ -48,3 +48,11 @@ First splitted the Data to train and test splits with 20% test size
 I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
 
 I tried three different models:
+
+- Linear Regression: Baseline for the model
+- KNeighborsRegressor: I tried for the first time KNeighborsRegressor to look if it is effective
+- Random Forerst: I tried it out and tought it would be a great model
+
+## Productionization
+
+In this step, i build a streamlit.io App that was hosted localy. The App takes all possible stats to calculate the Wins based on stats.
