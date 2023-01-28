@@ -28,3 +28,23 @@ Tweaked the web scraper github repo (above) to scrape 300 player stats from cod.
 - kills
 - assists
 - record_kill_streak
+
+## Data Cleaning
+
+After scraping and downloading the data from api, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
+
+- Removed usless and unuseable data
+- Made usefull columns (Kills + assists)
+- Made columns for diffrent Ratios (death per match, suicides per match, killed by an enemy, kills/match_ratio)
+
+## EDA
+
+Made some usefull plots for the analasys. Made some barplots, Scatterplots, etc.
+
+## Model Building
+
+First splitted the Data to train and test splits with 20% test size
+
+I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
+
+I tried three different models:
